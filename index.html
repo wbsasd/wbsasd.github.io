@@ -69,9 +69,16 @@
       </div>
     </div>
         <div>
-          <audio id="player" autoplay loop allow="autoplay">
+          <audio controls>
+        <source src="audio/song.mp3" type="audio/mpeg">
+        <!--Tulisan akan muncul jika tak ada file yang didukung oleh browser -->
+        <p>
+            Audio tidak disupport browser
+        </p>
+    </audio>
+          <!-- <audio id="player" autoplay loop allow="autoplay">
             <source src="audio/song.mp3" type="audio/mpeg">
-          </audio>
+          </audio> -->
           <!-- <button position= center class="play-button"><i class="fas fa-play"></i></button> -->
           <!-- <button class="btn btn-dark btn-sm btn-outline-info btn-player"><i class="fa fa-play"></i></button> -->
         </div>
